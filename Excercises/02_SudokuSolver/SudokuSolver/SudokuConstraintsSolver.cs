@@ -1,5 +1,4 @@
-﻿using System;
-using Google.OrTools.Sat;
+﻿using Google.OrTools.Sat;
 using SudokuSolver.Data;
 
 namespace SudokuSolver
@@ -41,13 +40,13 @@ namespace SudokuSolver
             // Constraint: all cells in each box contain a different value
             foreach (var numbersInBox in FieldsHelper.GetBoxes(fields))
             {
-                //model.AddAllDifferent(numbersInBox);
+                model.AddAllDifferent(numbersInBox);
             }
 
             // Add constraints of our specific sudoku
             foreach (var cellWithFixedNumber in sudoku.GetCellsWithValue())
             {
-                //model.Add(fields[cellWithFixedNumber.X][cellWithFixedNumber.Y] == cellWithFixedNumber.Value);
+                model.Add(fields[cellWithFixedNumber.X][cellWithFixedNumber.Y] == cellWithFixedNumber.Value);
             }
 
             // Solve
@@ -55,8 +54,6 @@ namespace SudokuSolver
             solver.Solve(model);
             var solution = FieldsHelper.GetFieldValuesFromSolver(solver, fields);
             return new Sudoku(solution);
-
-            throw new InvalidOperationException("Sudoku not solvable");
         }
     }
 }

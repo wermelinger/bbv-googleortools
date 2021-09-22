@@ -6,8 +6,8 @@
     <RootNamespace>SudokuSolver</RootNamespace>
   </PropertyGroup>
 
-    <ItemGroup>
-	    <PackageReference Include="Google.OrTools" Version="*" />
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.OrTools" Version="*" />
+  </ItemGroup>
 
 </Project>

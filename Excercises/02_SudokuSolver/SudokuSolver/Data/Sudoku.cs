@@ -113,7 +113,18 @@ namespace SudokuSolver.Data
         
         public IEnumerable<Cell> GetAllCellsInBox(int boxX, int boxY)
         {
-            // TODO: 
+            int startX = boxX * 3;
+            int startY = boxY * 3;
+            IList<Cell> cellsInBox = new List<Cell>();
+            for (int x = 0; x < 3; x++)
+            {
+                for (int y = 0; y< 3; y++)
+                {
+                    cellsInBox.Add(cells[startX + x][startY + y]);
+                }
+            }
+
+            return cellsInBox;
         }
 
         public IEnumerable<Cell> GetCellsWithValue()

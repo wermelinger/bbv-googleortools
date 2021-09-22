@@ -4,6 +4,7 @@
         <TargetFramework>net5.0</TargetFramework>
         <IsTestProject>true</IsTestProject>
         <IsPackable>false</IsPackable>
+        <RootNamespace>SudokuSolverExercises</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -15,7 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SudokuSolver\SudokuSolver.csproj" />
+        <ProjectReference Include="..\SudokuSolver\SudokuSolver.csproj" />
     </ItemGroup>
 
 </Project>
