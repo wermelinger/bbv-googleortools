@@ -3,6 +3,9 @@ using SudokuSolver.Data;
 
 namespace SudokuSolver
 {
+    /// <summary>
+    /// Prints out the solution.
+    /// </summary>
     class SudokuProgram
     {
         static void Main(string[] args)
