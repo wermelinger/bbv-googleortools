@@ -1,0 +1,104 @@
+﻿// STEP 1: Clean CpSimple / Set as Startup project
+
+
+// TYPE:
+            // Define Model
+            var model = new CpModel();
+
+            // Variables x,y,z with constraints 0 - 2
+            var x = model.NewIntVar(0, 2, "x");
+            var y = model.NewIntVar(0, 2, "y");
+            var z = model.NewIntVar(0, 2, "z");
+
+            // Solve: all feasible solutions
+            var solver = new CpSolver();
+            solver.SearchAllSolutions(model, new VarArraySolutionPrinter(new [] { x, y, z }));
+			
+// => From combinatorical point of view: leads to 3^3=27 possible solutions
+			
+
+
+
+
+
+// TYPE:
+            // Constraint: Variables different
+            model.Add(x != y);
+
+// => Extend and combine constraints 
+//    Solution space is reduced by 9 possible solutions
+			
+
+
+
+
+
+
+// TYPE:
+            model.Add(x != z);
+            model.Add(y != z);
+            
+// => Solution space is reduced to 6 possible solutions -> now all are different
+
+
+
+
+
+
+// TYPE:
+            model.AddAllDifferent(new [] { x, y, z });
+
+// => Replaced by global constraint method -> same result
+
+
+
+
+
+
+
+// TYPE:
+            // Constraint: x lower y
+            model.Add(x < y);
+            
+            // Constraint: The bigger x, the better!
+            model.Maximize(x);
+
+// => 1 solution: what?
+			
+			
+
+=========================================================================
+
+using Google.OrTools.Sat;
+
+namespace ConstraintOptimizationSimple
+{
+    class CpSimple
+    {
+        static void Main(string[] args)
+        {
+            // Define Model
+            var model = new CpModel();
+
+            // Variables x,y,z with constraints 0 - 2
+            var x = model.NewIntVar(0, 2, "x");
+            var y = model.NewIntVar(0, 2, "y");
+            var z = model.NewIntVar(0, 2, "z");
+
+            // Constraint: Variables different
+            model.AddAllDifferent(new[] { x, y, z });
+
+            // Constraint: x lower y
+            model.Add(x < y);
+
+            // Constraint: The bigger x, the better!
+            model.Maximize(x);
+
+            // Solve: all feasible solutions
+            var solver = new CpSolver();
+            solver.SearchAllSolutions(model, new VarArraySolutionPrinter(new[] { x, y, z }));
+			
+			throw new InvalidOperationException("Sudoku not solvable");
+        }
+    }
+}

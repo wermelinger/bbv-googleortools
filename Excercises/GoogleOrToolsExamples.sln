@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleConstraints", "01_SimpleConstraints\SimpleConstraints\SimpleConstraints.csproj", "{600C2B50-3603-46D1-B7C8-355A6858F9A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SudokuSolver", "02_SudokuSolver\SudokuSolver\SudokuSolver.csproj", "{65D45995-B36A-4F51-9927-245ADE15EA38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_SimpleConstraints", "01_SimpleConstraints", "{C1EA705E-7FC0-4D4A-8430-F9AA8C5DCFD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_SudokuSolver", "02_SudokuSolver", "{F72FDE74-3633-4F7D-9D7E-03CF87C82D49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SudokuSolverExcercises", "02_SudokuSolver\SudokuSolverExcercises\SudokuSolverExcercises.csproj", "{7BE9B6CB-4075-4A1E-B82A-183437636240}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{600C2B50-3603-46D1-B7C8-355A6858F9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{600C2B50-3603-46D1-B7C8-355A6858F9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{600C2B50-3603-46D1-B7C8-355A6858F9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{600C2B50-3603-46D1-B7C8-355A6858F9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65D45995-B36A-4F51-9927-245ADE15EA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65D45995-B36A-4F51-9927-245ADE15EA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65D45995-B36A-4F51-9927-245ADE15EA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65D45995-B36A-4F51-9927-245ADE15EA38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE9B6CB-4075-4A1E-B82A-183437636240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE9B6CB-4075-4A1E-B82A-183437636240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE9B6CB-4075-4A1E-B82A-183437636240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE9B6CB-4075-4A1E-B82A-183437636240}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2C14494-0390-45FB-8831-9BB87470C932}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{600C2B50-3603-46D1-B7C8-355A6858F9A0} = {C1EA705E-7FC0-4D4A-8430-F9AA8C5DCFD2}
+		{65D45995-B36A-4F51-9927-245ADE15EA38} = {F72FDE74-3633-4F7D-9D7E-03CF87C82D49}
+		{7BE9B6CB-4075-4A1E-B82A-183437636240} = {F72FDE74-3633-4F7D-9D7E-03CF87C82D49}
+	EndGlobalSection
+EndGlobal
