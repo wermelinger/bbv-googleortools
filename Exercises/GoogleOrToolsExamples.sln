@@ -11,7 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_SimpleConstraints", "01_
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_SudokuSolver", "02_SudokuSolver", "{F72FDE74-3633-4F7D-9D7E-03CF87C82D49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SudokuSolverExercises", "02_SudokuSolver\SudokuSolverExercises\SudokuSolverExercises.csproj", "{7BE9B6CB-4075-4A1E-B82A-183437636240}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SudokuSolverExercises", "02_SudokuSolver\SudokuSolverExercises\SudokuSolverExercises.csproj", "{7BE9B6CB-4075-4A1E-B82A-183437636240}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_MinesweeperSolver", "03_MinesweeperSolver", "{0DBDE6B9-7844-4076-9839-12FDE9AA8F76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinesweeperSolver", "03_MinesweeperSolver\MinesweeperSolver\MinesweeperSolver.csproj", "{4BA1305D-6D8F-492C-B1D1-CCA61AC87461}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,16 +35,21 @@ Global
 		{7BE9B6CB-4075-4A1E-B82A-183437636240}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BE9B6CB-4075-4A1E-B82A-183437636240}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BE9B6CB-4075-4A1E-B82A-183437636240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA1305D-6D8F-492C-B1D1-CCA61AC87461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA1305D-6D8F-492C-B1D1-CCA61AC87461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA1305D-6D8F-492C-B1D1-CCA61AC87461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA1305D-6D8F-492C-B1D1-CCA61AC87461}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A2C14494-0390-45FB-8831-9BB87470C932}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{600C2B50-3603-46D1-B7C8-355A6858F9A0} = {C1EA705E-7FC0-4D4A-8430-F9AA8C5DCFD2}
 		{65D45995-B36A-4F51-9927-245ADE15EA38} = {F72FDE74-3633-4F7D-9D7E-03CF87C82D49}
 		{7BE9B6CB-4075-4A1E-B82A-183437636240} = {F72FDE74-3633-4F7D-9D7E-03CF87C82D49}
+		{4BA1305D-6D8F-492C-B1D1-CCA61AC87461} = {0DBDE6B9-7844-4076-9839-12FDE9AA8F76}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2C14494-0390-45FB-8831-9BB87470C932}
 	EndGlobalSection
 EndGlobal

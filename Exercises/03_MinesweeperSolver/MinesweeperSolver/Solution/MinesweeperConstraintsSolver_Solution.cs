@@ -1,0 +1,70 @@
+﻿//using System.Linq;
+
+//using Google.OrTools.Sat;
+
+//using MinesweeperSolver.Data;
+
+//namespace MinesweeperSolver
+//{
+//    internal class MinesweeperConstraintsSolver
+//    {
+//        internal Minefield Solve(Minefield minefield)
+//        {
+//            // Initialize fields
+//            var fields = new IntVar[minefield.Width][];
+//            for (var x = 0; x < fields.Length; x++)
+//            {
+//                fields[x] = new IntVar[minefield.Height];
+//            }
+
+//            var model = new CpModel();
+
+//            // Constraint: A field can contain either one or zero mines.
+//            for (var x = 0; x < minefield.Width; x++)
+//            {
+//                for (var y = 0; y < minefield.Height; y++)
+//                {
+//                    fields[x][y] = model.NewIntVar(0, 1, $"{x}-{y}");
+//                }
+//            }
+            
+//            var cellsWithMineDetector = minefield.GetAllCells().OfType<CellWithMineDetector>();
+//            foreach (var cellWithMineDetector in cellsWithMineDetector)
+//            {
+//                var cellsInDetectionRadius = minefield.GetCellsInDetectionRadius(cellWithMineDetector);
+//                var fieldsInDetectionRadius = cellsInDetectionRadius.Select(cell => fields[cell.X][cell.Y]);
+
+//                // Constraint: The number of mines in the detection radius of a mine detector has to be equal to the number of detected mines.
+//                model.Add(LinearExpr.Sum(fieldsInDetectionRadius) == cellWithMineDetector.NumberOfDetectedMines);
+
+//                // Constraint: There are no mines on a field with a mine detector.
+//                model.Add(fields[cellWithMineDetector.X][cellWithMineDetector.Y] == 0);
+//            }
+            
+//            // Solve
+//            var solver = new CpSolver();
+//            var status = solver.Solve(model);
+
+//            if (status == CpSolverStatus.Infeasible)
+//            {
+//                throw new MinesweeperException("No solution found.");
+//            }
+
+//            // Update minefield with solution
+//            for (var x = 0; x < minefield.Width; x++)
+//            {
+//                for (var y = 0; y < minefield.Height; y++)
+//                {
+//                    var field = fields[x][y];
+//                    if ((int) solver.Value(field) == 1)
+//                    {
+//                        minefield.PlaceMine(x, y);
+//                    }
+//                }
+//            }
+            
+//            return minefield;
+//        }
+
+//    }
+//}
