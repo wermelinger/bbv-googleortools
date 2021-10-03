@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>MinesweeperSolver</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MinesweeperConstraintsSolver_Solution.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Minefields\Minefield1.txt" />
+    <None Remove="Minefields\Minefield1_Solution.txt" />
+    <None Remove="Minefields\Minefield2.txt" />
+    <None Remove="Minefields\Minefield2_Solution.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Minefields\Minefield1.txt" />
+    <EmbeddedResource Include="Minefields\Minefield1_Solution.txt" />
+    <EmbeddedResource Include="Minefields\Minefield2.txt" />
+    <EmbeddedResource Include="Minefields\Minefield2_Solution.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Solution\MinesweeperConstraintsSolver_Solution.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.OrTools" Version="*" />
+  </ItemGroup>
+
+</Project>
