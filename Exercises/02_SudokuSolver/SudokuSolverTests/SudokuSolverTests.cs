@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SudokuSolver;
 using SudokuSolver.Data;
 
-namespace SudokuSolverExercises
+namespace SudokuSolverTests
 {
     [TestClass]
     public class SudokuSolverExercises

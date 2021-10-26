@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_SimpleConstraints", "01_
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_SudokuSolver", "02_SudokuSolver", "{F72FDE74-3633-4F7D-9D7E-03CF87C82D49}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SudokuSolverExercises", "02_SudokuSolver\SudokuSolverExercises\SudokuSolverExercises.csproj", "{7BE9B6CB-4075-4A1E-B82A-183437636240}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SudokuSolverTests", "02_SudokuSolver\SudokuSolverTests\SudokuSolverTests.csproj", "{7BE9B6CB-4075-4A1E-B82A-183437636240}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_MinesweeperSolver", "03_MinesweeperSolver", "{0DBDE6B9-7844-4076-9839-12FDE9AA8F76}"
 EndProject
