@@ -15,6 +15,9 @@ namespace SimpleConstraints
             var z = model.NewIntVar(0, 2, "z");
 
             // Constraint: Variables different
+            // model.Add(x != y);
+            // model.Add(x != z);
+            // model.Add(y != z);
             model.AddAllDifferent(new[] { x, y, z });
 
             // Constraint: x lower y
