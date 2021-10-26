@@ -7,7 +7,7 @@ using SudokuSolver.Data;
 namespace SudokuSolverTests
 {
     [TestClass]
-    public class SudokuSolverExercises
+    public class SudokuConstraintsSolverTests
     {
         [TestMethod]
         public void Solve01_Rule_NoZerosAllowed()
