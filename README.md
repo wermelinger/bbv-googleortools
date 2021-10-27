@@ -11,7 +11,7 @@ This is an excercise to create a solver for Sudokus, as showed in the presentati
 * **SudokuSolver**: contains the solver with helper-classes. Your task is to program the model in `SudokuConstraintsSolver.cs`
 * **SudokuSolverTests**: contains unit-tests which are currently failing. Use them to guide you through the implementation of the solver and make them green - one by one.
 
-In case you don't know Sudoku: https://de.wikihow.com/Sudokus-l%C3%B6sen
+In case you don't know Sudoku: [https://de.wikihow.com/Sudokus-l%C3%B6sen](https://de.wikihow.com/Sudokus-l%C3%B6sen)
 
 In case you're stuck, you can have a look at the solution: SudokuSolver/Solution
 
@@ -19,8 +19,13 @@ In case you're stuck, you can have a look at the solution: SudokuSolver/Solution
 This is a more advanced and more open excercise. 
 * **MinesweeperSolver**: contains the solver with helper-classes. Your task is to program the model in `MinesweeperConstraintsSolver.cs`
 * **MinesweeperSolverTests**: contains unit-tests which are currently failing. Use them and add new ones to guide you through the implementation of the solver and make them green - one by one.
+* **Minefield**: Provides useful methods to deal with the minefield
+  * `Minefield.GetAllCells()` provides all cells
+  * Cells next to mines are of the type `CellWithMineDetector`
+  * `Minefield.GetCellsInDetectionRadius(cellWithMineDetector)` provides all cells in the radius of the given cellWithMineDetector
+  * Once you found the solution, you can mark a field with a mine: `Minefield.PlaceMine(x, y)`
 
-In case you don't know Minesweeper: https://de.wikihow.com/Minesweeper-spielen
+In case you don't know Minesweeper: [https://de.wikihow.com/Minesweeper-spielen](https://de.wikihow.com/Minesweeper-spielen)
 
 In case you're stuck, you can have a look at the solution: MinesweeperSolver/Solution
 
@@ -43,7 +48,7 @@ In case you're stuck, you can have a look at the solution: MinesweeperSolver/Sol
 |`solver.Value(x)`|After `Solve(model)` the solution can be inspected|
 
 ## Links
-- Getting started with C# https://developers.google.com/optimization/introduction/dotnet
-- Google OR-Tools on Github (including samples) https://github.com/google/or-tools
-- API documentation (in Python) https://google.github.io/or-tools/python/ortools/sat/python/cp_model.html
+- Getting started with C# [https://developers.google.com/optimization/introduction/dotnet](https://developers.google.com/optimization/introduction/dotnet)
+- Google OR-Tools on Github (including samples) [https://github.com/google/or-tools](https://github.com/google/or-tools)
+- API documentation (in Python) [https://google.github.io/or-tools/python/ortools/sat/python/cp_model.html](https://google.github.io/or-tools/python/ortools/sat/python/cp_model.html)
 
