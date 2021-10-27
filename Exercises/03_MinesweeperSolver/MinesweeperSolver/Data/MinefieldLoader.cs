@@ -33,7 +33,7 @@ namespace MinesweeperSolver.Data
             return text;
         }
 
-        private static Minefield ParseMinefield(string minefieldAsText)
+        internal static Minefield ParseMinefield(string minefieldAsText)
         {
             var isValid = Regex.IsMatch(minefieldAsText, "^[ 0-9\r\n]*$");
             if (!isValid)
