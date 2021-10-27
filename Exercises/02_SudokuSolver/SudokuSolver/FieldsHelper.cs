@@ -6,7 +6,7 @@ namespace SudokuSolver
     /// <summary>
     /// Provides helper methods to access the solver-fields variables.
     /// </summary>
-    public static class FieldsHelper
+    internal static class FieldsHelper
     {
         public static IEnumerable<IEnumerable<IntVar>> GetColumns(IntVar[][] fields)
         {

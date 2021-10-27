@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SudokuSolver.Data
 {
-    public class Sudoku
+    internal class Sudoku
     {
         private readonly Cell[][] cells = new Cell[9][];
 

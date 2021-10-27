@@ -1,6 +1,6 @@
 ﻿namespace SudokuSolver.Data
 {
-    public class Cell
+    internal class Cell
     {
         public Cell(int x, int y, int value)
         {

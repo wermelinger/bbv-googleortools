@@ -3,9 +3,9 @@ using SudokuSolver.Data;
 
 namespace SudokuSolver
 {
-    public class SudokuConstraintsSolver
+    internal class SudokuConstraintsSolver
     {
-        public Sudoku Solve(Sudoku sudoku)
+        internal Sudoku Solve(Sudoku sudoku)
         {
             // Initialize fields 9x9
             var fields = new IntVar[9][];
