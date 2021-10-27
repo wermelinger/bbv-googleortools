@@ -1,5 +1,9 @@
 # Google OR-Tools
+
+![Google OR-Tools](Images/google-or-tools.jpg)
+
 This repository contains samples and excercises for constraint optimization with Google OR-Tools using dotnet. 
+
 
 ## 01_SimpleConstraints
 This is no excercise but just a basic sample which was showed in the presentation.
