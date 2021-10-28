@@ -40,7 +40,7 @@ In case you're stuck, you can have a look at the solution: MinesweeperSolver/Sol
 |`var model = new CpModel()`|Creates a model|
 |`var x = model.NewIntVar(0, 9, "x")`|Creates a new integer-variable in the model|
 |`var constraint = model.Add(x == y)`|Adds a new constraint to the model: x should be equal to y|
-|`var constraint = model.Add(LinearExpr.Sum(variables) == 7)`|Adds a new constraint to the model: The number of variables should be equal to 7|
+|`var constraint = model.Add(LinearExpr.Sum(variables) == 7)`|Adds a new constraint to the model: The sum of the variables should be equal to 7|
 |`model.Maximize(x)`|Sets the objective of the model to maximize x|
 |`model.AddAllDifferent(variables)`|Adds a global constraint requiring all variables in the list to be different|
 
