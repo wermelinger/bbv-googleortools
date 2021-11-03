@@ -55,4 +55,6 @@ In case you're stuck, you can have a look at the solution: MinesweeperSolver/Sol
 - Getting started with C# [https://developers.google.com/optimization/introduction/dotnet](https://developers.google.com/optimization/introduction/dotnet)
 - Google OR-Tools on Github (including samples) [https://github.com/google/or-tools](https://github.com/google/or-tools)
 - API documentation (in Python) [https://google.github.io/or-tools/python/ortools/sat/python/cp_model.html](https://google.github.io/or-tools/python/ortools/sat/python/cp_model.html)
+- Many examples \(in C#\) [https://github.com/google/or-tools/tree/master/examples/dotnet](https://github.com/google/or-tools/tree/master/examples/dotnet)
+- Even more examples \(in Python\) [http://www.hakank.org/google_or_tools/](http://www.hakank.org/google_or_tools/)
 
