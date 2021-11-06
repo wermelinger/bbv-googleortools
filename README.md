@@ -30,6 +30,7 @@ This is a more advanced and more open excercise.
   * Once you found the solution, you can mark a field with a mine: `Minefield.PlaceMine(x, y)`
 
 In case you don't know Minesweeper: [https://de.wikihow.com/Minesweeper-spielen](https://de.wikihow.com/Minesweeper-spielen)
+For additional Minesweeper fields to test your solution: [https://puzzlemadness.co.uk/minesweeper/medium](https://puzzlemadness.co.uk/minesweeper/medium)
 
 In case you're stuck, you can have a look at the solution: MinesweeperSolver/Solution
 
@@ -53,6 +54,7 @@ In case you're stuck, you can have a look at the solution: MinesweeperSolver/Sol
 
 ## Links
 - Getting started with C# [https://developers.google.com/optimization/introduction/dotnet](https://developers.google.com/optimization/introduction/dotnet)
+- Google OR-Tools [https://developers.google.com/optimization](https://developers.google.com/optimization)
 - Google OR-Tools on Github (including samples) [https://github.com/google/or-tools](https://github.com/google/or-tools)
 - API documentation (in Python) [https://google.github.io/or-tools/python/ortools/sat/python/cp_model.html](https://google.github.io/or-tools/python/ortools/sat/python/cp_model.html)
 - Many examples \(in C#\) [https://github.com/google/or-tools/tree/master/examples/dotnet](https://github.com/google/or-tools/tree/master/examples/dotnet)
