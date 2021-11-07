@@ -8,7 +8,7 @@ namespace MinesweeperSolver.Data
 {
     internal static class MinefieldLoader
     {
-        public static Minefield LoadFromEmbeddedResource(string resourceName)
+        internal static Minefield LoadFromEmbeddedResource(string resourceName)
         {
             var minefieldAsText = LoadTextFromEmbeddedResource(resourceName);
             var minefield = ParseMinefield(minefieldAsText);
@@ -35,7 +35,7 @@ namespace MinesweeperSolver.Data
 
         internal static Minefield ParseMinefield(string minefieldAsText)
         {
-            var isValid = Regex.IsMatch(minefieldAsText, "^[ 0-9\r\n]*$");
+            var isValid = Regex.IsMatch(minefieldAsText, "^[ 0-9X\r\n]*$");
             if (!isValid)
             {
                 throw new MinesweeperException("Minefield text uses invalid characters.");
@@ -68,6 +68,10 @@ namespace MinesweeperSolver.Data
                     {
                         var numberOfDetectedMines = int.Parse(character.ToString());
                         minefield.PlaceMineDetector(x, y, numberOfDetectedMines);
+                    }
+                    if (character == 'X')
+                    {
+                        minefield.PlaceMine(x, y);
                     }
                 }
             }
