@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -97,7 +98,9 @@ namespace SudokuSolverTests
                                        5, 2, 4,   3, 1, 8,   6, 9, 7,
                                        6, 3, 9,   7, 4, 2,   5, 8, 1,
                                        8, 7, 1,   6, 5, 9,   2, 3, 4 };
-            solution.GetAllCells().Select(cell => cell.Value).Should().BeEquivalentTo(expectedSolution);
+            var expectedSudoku = new Sudoku(expectedSolution);
+            var actual = solution.GetAllCells().Select(cell => cell.Value);
+            actual.Should().Equal(expectedSudoku.GetAllCells().Select(cell => cell.Value));
         }
 
         private int[] GenerateInitialGrid()
