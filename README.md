@@ -4,12 +4,12 @@
 This repository \([https://github.com/wermelinger/bbv-googleortools](https://github.com/wermelinger/bbv-googleortools)\) contains samples and excercises for constraint optimization with Google OR-Tools using dotnet. 
 
 # 01_SimpleConstraints
-This is no excercise but just a basic sample which was showed in the presentation.
+This is no excercise but just a basic sample which was shown in the presentation.
 
 It consists of a simple model containing variables with constraints and an optimization. 
 
 # 02_SudokuSolver
-This is an excercise to create a solver for Sudokus, as showed in the presentation.
+This is an excercise to create a solver for Sudokus, as shown in the presentation.
 * **SudokuSolver**: contains the solver with helper-classes. Your task is to program the model in `SudokuConstraintsSolver.cs`
 * **SudokuSolverTests**: contains unit-tests which are currently failing. Use them to guide you through the implementation of the solver and make them green - one by one.
 * **FieldsHelper**: Contains helper methods to deal with the Sudoku-fields
